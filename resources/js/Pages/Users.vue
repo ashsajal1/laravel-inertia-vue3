@@ -2,7 +2,7 @@
     <Navbar />
     <div style="margin-top: 600px;">
         <div> current time is : {{ time }}</div>
-        <Link class="p-2 rounded bg-red-600 text-slate-50" href='/users'>Refresh</Link>
+        <Link preserve-scroll class="p-2 rounded bg-red-600 text-slate-50" href='/users'>Refresh</Link>
     </div>
 </template>
 
