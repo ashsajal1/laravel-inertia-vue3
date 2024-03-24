@@ -8,6 +8,8 @@
     @inertiaHead
   </head>
   <body>
+    <section class='h-screen'>
     @inertia
+    </section>
   </body>
 </html>
