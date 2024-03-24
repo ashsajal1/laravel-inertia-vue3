@@ -2,7 +2,7 @@
     <nav class="bg-red-500 py-4">
       <ul class="flex justify-center space-x-4">
         <li>
-          <Link href="/" class="text-white hover:text-gray-200">Home</Link>
+          <Link href="/" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.url === '/'}">Home</Link>
         </li>
         <li>
           <Link href="/users" class="text-white hover:text-gray-200">Users</Link>
