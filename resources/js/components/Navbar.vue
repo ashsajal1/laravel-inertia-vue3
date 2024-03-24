@@ -5,13 +5,13 @@
           <Link href="/" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.component === 'Home'}">Home</Link>
         </li>
         <li>
-          <Link href="/users?foo=bar" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.url.startsWith('/users')}">Users</Link>
+          <Link href="/users?foo=bar" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.component === 'Users'}">Users</Link>
         </li>
         <li>
-          <Link href="/settings" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.url === '/settings'}">Settings</Link>
+          <Link href="/settings" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.component === 'Settings'}">Settings</Link>
         </li>
         <li>
-          <Link href="/logout" method="post" as="button" class="text-white hover:text-gray-200" :data="{foo:'bar'}" :class="{'bg-red-800 p-2 rounded':$page.url === '/logout'}">Log out</Link>
+          <Link href="/logout" method="post" as="button" class="text-white hover:text-gray-200" :data="{foo:'bar'}">Log out</Link>
         </li>
       </ul>
     </nav>
