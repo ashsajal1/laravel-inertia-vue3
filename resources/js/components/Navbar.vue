@@ -5,7 +5,7 @@
           <Link href="/" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.url === '/'}">Home</Link>
         </li>
         <li>
-          <Link href="/users" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.url === '/users'}">Users</Link>
+          <Link href="/users?foo=bar" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.url.startsWith('/users')}">Users</Link>
         </li>
         <li>
           <Link href="/settings" class="text-white hover:text-gray-200" :class="{'bg-red-800 p-2 rounded':$page.url === '/settings'}">Settings</Link>
