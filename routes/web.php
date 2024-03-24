@@ -11,8 +11,8 @@ Route::get('/users', function () {
     return Inertia::render('Users');
 });
 
-Route::get('/seetings', function () {
-    return Inertia::render('Seetings');
+Route::get('/settings', function () {
+    return Inertia::render('Settings');
 });
 
 Route::post('/logout', function () {

@@ -1,7 +1,7 @@
 <template>
     <Navbar />
     <div>
-        <h1>Welcome there to home page</h1>
+        <h1 class="text-3xl font-bold text-red-600">Welcome there to home page</h1>
     </div>
 </template>
 
