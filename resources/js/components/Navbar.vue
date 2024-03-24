@@ -11,7 +11,7 @@
           <Link href="/settings" class="text-white hover:text-gray-200">Settings</Link>
         </li>
         <li>
-          <Link href="/logout" method="post" as="button" class="text-white hover:text-gray-200">Log out</Link>
+          <Link href="/logout" method="post" as="button" class="text-white hover:text-gray-200" :data="{foo:'bar'}">Log out</Link>
         </li>
       </ul>
     </nav>
