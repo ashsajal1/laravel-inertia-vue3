@@ -6,9 +6,16 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Home');
 });
+
 Route::get('/users', function () {
     return Inertia::render('Users');
 });
+
 Route::get('/seetings', function () {
     return Inertia::render('Seetings');
 });
+
+Route::post('/logout', function () {
+    dd("Logging user out");
+});
+
