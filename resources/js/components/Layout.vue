@@ -1,5 +1,6 @@
 <template>
   <Navbar></Navbar>
+  <p>Welcome back dear, {{ $page.props.auth.user.username }}!</p>
   <slot />
 </template>
 
