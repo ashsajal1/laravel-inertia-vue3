@@ -1,10 +1,12 @@
 <template>
-    <Navbar />
-    <div>
-        Settings page
-    </div>
+    <Layout>
+        <div>
+            <h1 class="text-3xl font-bold text-red-600">Welcome there to settings page</h1>
+        </div>
+    </Layout>
+
 </template>
 
 <script setup>
-import Navbar from '../components/Navbar.vue';
+import Layout from '../components/Layout.vue';
 </script>

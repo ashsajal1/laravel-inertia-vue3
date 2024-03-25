@@ -1,14 +1,12 @@
 <template>
-    <Navbar />
-    <div style="margin-top: 600px;">
-        <div> current time is : {{ time }}</div>
-        <Link preserve-scroll class="p-2 rounded bg-red-600 text-slate-50" href='/users'>Refresh</Link>
-    </div>
+    <Layout>
+        <div>
+            <h1 class="text-3xl font-bold text-red-600">Welcome there to users page</h1>
+        </div>
+    </Layout>
+
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
-import { Link } from '@inertiajs/vue3'
-import Navbar from '../components/Navbar.vue';
-const { time } = defineProps(['time'])
+import Layout from '../components/Layout.vue';
 </script>
